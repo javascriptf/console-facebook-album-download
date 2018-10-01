@@ -1,6 +1,6 @@
 {
   "name": "facebook-album-download",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Download Facebook Photo Album from DownAlbum meta.",
   "main": "index.js",
   "scripts": {
