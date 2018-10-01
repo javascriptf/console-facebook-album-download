@@ -18,7 +18,7 @@ function dateToString(v) {
 function setFiletime(pth, dat) {
   var tim = dateToString(dat);
   console.log(path.basename(pth), tim);
-  cp.exec(`nircmd setfiletime "${pth}" "${tim}" "${tim}"`, {stdio: [0, 1, 2]});
+  cp.execSync(`nircmd setfiletime "${pth}" "${tim}" "${tim}"`, {stdio: [0, 1, 2]});
 };
 
 function download(url, pth) {
@@ -34,7 +34,7 @@ function download(url, pth) {
 
 async function downloadAlbum(m, pth) {
   console.log(`Album: ${m.aName} (${m.photos.length})`);
-  var dir = path.join(pth, m.aName);
+  var dir = path.join(pth, m.aName.replace(/[^\w\s]+/g, '_'));
   fs.mkdirSync(dir);
   var rdy = [];
   for(var p of m.photos) {
