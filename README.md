@@ -1,6 +1,11 @@
+If you want to download a specific album, this extension seems to work.<br>
+[Album Downloader for Facebook](https://chrome.google.com/webstore/detail/album-downloader-for-face/oallcdoceahndjmaalbicbcgpfnajgae?hl=en)
+
+<br>
+<br>
+
 Download Facebook Photo Album from DownAlbum meta.
 > Google photos looks better, thats whey!
-
 
 ## install
 
